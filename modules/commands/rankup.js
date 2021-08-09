@@ -36,7 +36,7 @@ module.exports.handleEvent = async function({ api, event, Currencies, Users }) {
 
 	if (level > curLevel && level != 1) {
 		const name = global.data.userName.get(senderID) || await Users.getNameUser(senderID);
-		var messsage = (typeof thread.customRankup == "undefined") ? msg = "Trình độ chém gió của {name} đã đạt tới level {level}" : msg = thread.customRankup,
+		var messsage = (typeof thread.customRankup == "undefined") ? msg = "Trình độ chém gió của người đẹp {name} đã đạt tới level {level}" : msg = thread.customRankup,
 			arrayContent;
 
 		messsage = messsage
